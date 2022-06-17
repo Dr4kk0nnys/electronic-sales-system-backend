@@ -4,7 +4,7 @@ import rateLimit from "express-rate-limit";
 import { config } from "dotenv";
 
 /* Database */
-import { client as database } from "services/databaseConnection";
+import { database } from "services/databaseConnection";
 
 /* Routes */
 import { routes } from 'routes/routes';

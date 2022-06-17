@@ -1,6 +1,6 @@
 import { Client } from 'pg';
 
-const client = new Client({
+const database = new Client({
     host: '127.0.0.1',
     user: 'dr4kk0nnys',
     port: 5432,
@@ -8,4 +8,4 @@ const client = new Client({
     database: 'electronic_sales_system'
 });
 
-export { client };
+export { database };
