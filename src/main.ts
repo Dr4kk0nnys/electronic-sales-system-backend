@@ -3,6 +3,9 @@ import cors from "cors";
 import rateLimit from "express-rate-limit";
 import { config } from "dotenv";
 
+/* Database */
+import { client as database } from "services/databaseConnection";
+
 /* Routes */
 import { routes } from 'routes/routes';
 
@@ -24,7 +27,7 @@ app.use(
 );
 (async () => {
     try {
-        // await database.connect();
+        await database.connect();
     } catch (e) { }
 })();
 

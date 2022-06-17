@@ -1,0 +1,4 @@
+Clients:
+    ✔ Client model @done(22-06-17 11:35)
+        - Name, cpf, address and phone number
+    ☐ Client CRUD

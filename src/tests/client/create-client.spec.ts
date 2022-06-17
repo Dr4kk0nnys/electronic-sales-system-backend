@@ -7,7 +7,7 @@ it('should successfully create a new client', async () => {
         method: 'POST',
         data: {
             name: 'Client name',
-            phoneNumber: '+00 (00) 0 0000-0000',
+            phone_number: '+00 (00) 0 0000-0000',
             cpf: '000.000.000-00',
             address: 'Client address street 134, b'
         }
