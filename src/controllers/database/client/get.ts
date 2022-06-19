@@ -11,6 +11,13 @@ const getClientBy = {
             `SELECT * FROM clients WHERE ${keysMap};`,
             Object.values(parameters)
         )).rows;
+    },
+
+    id: async (id: number): Promise<Client> => {
+        return (await database.query(
+            `SELECT * FROM clients WHERE id = $1`,
+            [id]
+        )).rows[0];
     }
 }
 

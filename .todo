@@ -2,3 +2,4 @@ Clients:
     ✔ Client model @done(22-06-17 11:35)
         - Name, cpf, address and phone number
     ☐ Client CRUD
+        ☐ Get Client through "starts with" or "has" ( Client name: "Dr4kk0nnys", query: "Dr4kk" will return "Dr4kk0nnys" as client )
