@@ -1,11 +1,11 @@
-import { createClient } from "controllers/database/client/create";
 import { Router } from "express";
-import { Client } from "models/client";
 const router = Router();
+
+import { createClientBy } from "controllers/database/client/create";
 
 router.post('/', async (req, res) => {
     try {
-        const client = await createClient.byDefault(req.body);
+        const client = await createClientBy.default(req.body);
         return res.status(200).send({ client });
     } catch (e) {
         return res.status(400).send('Unable to create client.: \n' + e);
