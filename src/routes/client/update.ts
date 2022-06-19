@@ -20,8 +20,6 @@ router.put('/', async (req, res) => {
         req.body[key] ? client[key] = req.body[key] : null;
     }
 
-    console.log({ client, body: req.body });
-
     /* Note: Updating the client */
     await updateClientsBy.id(id, client);
 
