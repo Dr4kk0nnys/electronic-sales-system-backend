@@ -1,8 +1,8 @@
 class Client {
-    name: string;
+    client_name: string;
     cpf: string;
     phone_number: string;
-    address: string;
+    client_address: string;
 }
 
 export { Client };

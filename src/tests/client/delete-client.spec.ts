@@ -1,8 +1,9 @@
 import axios from "axios";
 
-it('should successfully create a new client', async () => {
+it('should successfully remove a new client', async () => {
 
-    const response = await axios({
+    /* Note: Creating a new client */
+    await axios({
         url: 'http://localhost:8080/clients/',
         method: 'POST',
         data: {
@@ -13,6 +14,13 @@ it('should successfully create a new client', async () => {
         }
     });
 
-    expect(response.status).toBe(200);
+    const response = await axios({
+        url: 'http://localhost:8080/clients/',
+        method: 'DELETE',
+        params: {
+            id: 1
+        }
+    })
 
+    expect(response.status).toBe(200);
 });
