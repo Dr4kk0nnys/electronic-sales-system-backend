@@ -3,7 +3,7 @@ import axios from "axios";
 it('should successfully update a new client', async () => {
 
     /* Note: Creating a new client */
-    const create = await axios({
+    await axios({
         url: 'http://localhost:8080/clients/',
         method: 'POST',
         data: {
